@@ -4,13 +4,27 @@
   <meta charset="UTF-8">
   <title>Acesso Negado</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .img-pequena {
+  width: 150px;
+  height: auto;
+  border: 1px solid #555;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #444;
+  transition: transform 0.2s ease;
+}
+
+.img-pequena:hover {
+  transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
   <div class="negado">
     <h2>ERRO</h2>
     <a href="espelhos.html">Você não deveria estar aqui.</a>
 <ul>
-   <li><a href="log.html"> <img src="imagens/naodefinido.png" alt="nãodefinido"> </a></li></ul>
+   <li><a href="log.html"> <img src="imagens/naodefinido.png" alt="nãodefinido" class="img-pequena"> </a></li></ul>
 
 <audio id="hoverSound" src="glitch.mp3" preload="auto"></audio>
   <script document.querySelectorAll('enter, button').forEach(el => {
