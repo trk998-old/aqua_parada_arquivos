@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Entrada</title>
+</head>
+<body style="background-color: black; color: white; font-family: monospace;">
+  <h2>Insira seu ID</h2>
+  <form onsubmit="return verificarAcesso()">
+    <input type="text" id="codigo" placeholder="Código de acesso" required>
+    <button type="submit">Entrar</button>
+  </form>
+
+  <script>
+    function verificarAcesso() {
+      const agora = new Date();
+      const horas = agora.getHours();
+      const minutos = agora.getMinutes();
+      const codigo = document.getElementById("codigo").value.trim();
+
+      if (horas === 3 && minutos === 33) {
+        if (codigo === "1998-TRK") {
+          window.location.href = "arquivo.html";
+        } else {
+          window.location.href = "lago.html";
+        }
+      } else {
+        alert("Acesso não autorizado. Tente às 3h33.");
+      }
+
+      return false;
+    }
+  </script>
+</body>
+</html>

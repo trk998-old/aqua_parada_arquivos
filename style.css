@@ -1,0 +1,32 @@
+
+body {
+  background-color: black;
+  color: #ccc;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  margin: 0;
+  padding: 2em;
+}
+.forum h1, .login h2, .negado h2 {
+  color: white;
+  text-shadow: 0 0 5px red;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  margin: 1em 0;
+}
+a {
+  color: cyan;
+  text-decoration: none;
+}
+a:hover {
+  text-shadow: 0 0 5px cyan;
+}
+.lago img {
+  width: 100%;
+  max-width: 400px;
+  filter: blur(3px) grayscale(80%);
+}

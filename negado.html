@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Acesso Negado</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="negado">
+    <h2>ERRO</h2>
+    <a href="espelhos.html">Você não deveria estar aqui.</a>
+
+<audio id="hoverSound" src="glitch.mp3" preload="auto"></audio>
+  <script document.querySelectorAll('enter, button').forEach(el => {
+  el.addEventListener('mouse', () => {
+    const audio = document.getElementById('hoverSound');
+    audio.currentTime = 0.5;
+    audio.play();
+  });
+});
+ ></script>
+  </div>
+</body>
+</html>
